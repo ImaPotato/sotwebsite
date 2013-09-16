@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en", style="background-color:white;"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Scott Allen, A Little About Me.</title>
+	<meta name="description" content="">
+	<meta name="author" content="Scott Allen">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+
+	<style type="text/css">
+<!--
+A:link { COLOR: black; TEXT-DECORATION: none; font-weight: normal }
+A:visited { COLOR: black; TEXT-DECORATION: none; font-weight: normal }
+A:active { COLOR: black; TEXT-DECORATION: none }
+A:hover { COLOR: blue; TEXT-DECORATION: none; font-weight: none }
+-->
+
+img{
+	max-width: 100%;
+}
+</style>
+   <script type="text/javascript" src="canvastoolkit.js"></script>
+   <script type="text/javascript" src="balls.js"></script>
+   <script type="text/javascript">
+      window.onload = function () {
+         var bounce = new games.Bounce(document.getElementById("canvas"));
+         bounce.initialize();
+      };
+   </script>
+
+</head>
+<body>
+
+<div class="container">
+		<img src="./images/back.png"/>
+</div>
+<div class="container">
+
+	<div class="container">
+		<div class="one-third column">
+			<h4 align="center"><a href="index.html">Home</a></h4>
+		</div>
+		<div class="one-third column">
+			<h4 align="center"><a href="work.html">Work</a></h4>
+		</div>
+		<div class="one-third column">
+			<h4 align="center"><a href="contactme.html">Contact me</a></h4>
+		</div>
+		<hr>
+	</div>
+	<div class = "container">
+	<h4 align = "center">A very basic bouncing ball simulation, written in JavaScript</h4>
+		   <canvas id="canvas" width="900" height="600" style="background-color: #FFFFFF"></canvas>
+	</div>
+</body>
+</html>
